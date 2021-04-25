@@ -50,7 +50,9 @@ class MyPromise {
             this.catchFn = catchFn;
         }
         return this;
-    } finally(finallyFn) {
+    } 
+    
+    finally(finallyFn) {
         if (typeof finallyFn == "function") {
             this.finallyFn = finallyFn;
         }
